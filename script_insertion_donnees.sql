@@ -254,22 +254,22 @@ INSERT INTO fonction(fonc_libelle) VALUES
 ('mécanicien'),
 ('gestionnaire');
 
-INSERT INTO personnel(pers_nom, pers_prenom, pers_fonc_id) VALUES
+INSERT INTO personnel(pers_nom, pers_prenom, fonc_id) VALUES
 ('Larry', 'Bambelle', 1),
 ('Ray', 'Defesse', 2),
 ('Jerry', 'Kan', 1),
 ('Bart', 'Tabac', 1);
 
 INSERT INTO element_vehicule_etat(element_libelle, element_coefficient) VALUES
-('pneus', 1),
+('pneus', 1), -- rajouter un élément "NONE"
 ('aile', 5),
 ('rétroviseur', 0.1),
 ('pare-brise', 1),
 ('phare', 0.1);
 
 INSERT INTO statut_etat_des_lieux (stat_etat_libelle) VALUES
-('Fait'),
-('Non fait');
+('Non Fait'),
+('Fait');
 
 INSERT INTO etat_des_lieux(etat_des_lieux_commentaire, etat_des_lieux_date, pers_id, contrat_id) VALUES
 ('RAS', '2017-08-20', 4, 3),
@@ -278,24 +278,24 @@ INSERT INTO etat_des_lieux(etat_des_lieux_commentaire, etat_des_lieux_date, pers
 ('Réservoir vide', '2017-09-23', 1, 2),
 ('RAS', '2017-10-13', 3, 4);
 
-INSERT INTO sensuivre(stat_etat__id, etat_des_lieux_id, element_id) VALUES
-(1, 1, NULL),
-(1, 2, 3),
-(1, 2, 4),
-(1, 3, NULL),
-(1, 4, NULL),
-(1, 5, NULL);
+INSERT INTO sensuivre(stat_etat_id, etat_des_lieux_id, element_id) VALUES
+(2, 1, 1),
+(2, 2, 3),
+(2, 2, 4),
+(2, 3, 1),
+(2, 4, 1),
+(2, 5, 1);
 
 INSERT INTO statut_entretien(statut_entretien_libelle) VALUES
 ('fait'),
 ('non fait'),
 ('en cours');
 
-INSERT INTO entretien(entr_libelle,statut_entretient_id,entr_date) VALUES
-('nettoyage', 1, '2017-10-17'),
-('vidange', 2, '2017-09-12'),
-('changement ampoule', 3, '2017-10-16'),
-('changement essuis glace', 1, '2017-10-15');
+INSERT INTO entretien(entr_libelle, entr_date, stat_etat_id, pers_id, veh_id, statut_entretien_id) VALUES
+('nettoyage', '2017-10-17', 2, 2, 1, 1),
+('vidange', '2017-09-12', 2, 1, 2, 1),
+('changement ampoule', '2017-10-16', 2, 3, 3, 2),
+('changement essuis glace', '2017-10-15', 2, 4, 4, 1);
 
 INSERT INTO penalites(penalite_libelle, penalite_forfait, penalite_coeff) VALUES
 ('jours de retard', NULL, 2),
