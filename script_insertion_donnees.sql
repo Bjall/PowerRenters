@@ -261,7 +261,8 @@ INSERT INTO personnel(pers_nom, pers_prenom, fonc_id) VALUES
 ('Bart', 'Tabac', 1);
 
 INSERT INTO element_vehicule_etat(element_libelle, element_coefficient) VALUES
-('pneus', 1), -- rajouter un élément "NONE"
+('RAS', 0),
+('pneus', 1),
 ('aile', 5),
 ('rétroviseur', 0.1),
 ('pare-brise', 1),
