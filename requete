@@ -8,6 +8,7 @@ on v.vehmmod_id = modele.vehmmod_id
 inner join vehm_marque as mar
 on modele.vehmar_id = mar.vehmar_id
 where s.statut_entretien_id = 1;	 -- vehicule qui contiennent un entretien à  1 = vrai -- 
+-- incomplet car plusieurs fois le même vehicule si plusieurs entretiens fait et ne tient pas compte de la temporalité --
 
 --
 
