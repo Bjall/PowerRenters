@@ -183,8 +183,8 @@ INSERT INTO vehicule(veh_date_achat, veh_photo, veh_nb_place, veh_assur, veh_dat
 ('2017-01-21', '../images/photos/vehicule4.png', 5, 'F24484622983', '2017-01-21', 12378, 12, 200, 1995, 9, 1, 1, 5, 4, 3, 4),
 ('2017-03-19', '../images/photos/vehicule5.png', 5, 'F24417627612', '2017-03-19', 24630, 10, 184, 1242, 14, 2, 1, 10, 5, 1, 4),
 ('2017-03-19', '../images/photos/vehicule5.png', 5, 'F24417627618', '2017-03-19', 18657, 10, 184, 1242, 14, 2, 1, 4, 5, 1, 4),
-('2015-09-13', '../images/photos/vehicule7.png', 1, 'F24415715223', NULL, NULL, NULL, NULL, NULL, 5, NULL, NULL, 2, 6, NULL, NULL),
-('2016-09-28', '../images/photos/vehicule12.png', 2, 'F24415478188', '2016-09-28', 54826, 7, 150, 749, 1, 1, 1, 2, 7, NULL, 3);
+('2015-09-13', '../images/photos/vehicule6.png', 1, 'F24415715223', NULL, NULL, NULL, NULL, NULL, 5, NULL, NULL, 2, 6, NULL, NULL),
+('2016-09-28', '../images/photos/vehicule7.png', 2, 'F24415478188', '2016-09-28', 54826, 7, 150, 749, 1, 1, 1, 2, 7, NULL, 3);
 
 INSERT INTO disposer(option_veh_id, veh_id) VALUES
 (1, 2),
@@ -296,12 +296,19 @@ INSERT INTO entretien(entr_libelle, entr_date, stat_etat_id, pers_id, veh_id, st
 ('nettoyage', '2017-10-17', 2, 2, 1, 1),
 ('vidange', '2017-09-12', 2, 1, 2, 1),
 ('changement ampoule', '2017-10-16', 2, 3, 3, 2),
-('changement essuis glace', '2017-10-15', 2, 4, 4, 1);
+('changement essuis glace', '2017-10-15', 2, 4, 3, 1),
+('préparation', '2017-03-20', 2, 1, 1, 1),
+('préparation', '2017-03-20', 2, 1, 2, 1),
+('préparation', '2017-03-20', 2, 1, 3, 1),
+('préparation', '2017-03-20', 2, 1, 4, 1),
+('préparation', '2017-03-20', 2, 1, 5, 1),
+('préparation', '2017-03-20', 2, 1, 6, 1),
+('préparation', '2017-03-20', 2, 1, 7, 1);
 
 INSERT INTO penalites(penalite_libelle, penalite_forfait, penalite_coeff) VALUES
 ('jours de retard', NULL, 2),
 ('plein complet non fait', 100, NULL),
-('annulation de la resa avant 7jours', NULL, 0.2),
+('annulation de la resa avant 7 jours', NULL, 0.2),
 ('contravention', 50, NULL);
 
 INSERT INTO penaliser(contrat_id, penalite_id) VALUES
