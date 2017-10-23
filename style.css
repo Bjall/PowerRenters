@@ -1,0 +1,229 @@
+
+
+/* première bande noire en haut*/
+#bandeau {
+background-color: black;
+height:100px;
+font-family: 'Anton', sans-serif;
+}
+
+.listeb {
+	display: flex;
+	flex-direction: row;
+justify-content: space-between;
+align-items: center;
+margin-top: -0.7px;
+}
+
+/*logo*/
+#bandeau img{
+	height:80px;
+	margin-top: 10px;
+}
+/*ligne du tableau*/
+.lignebas {
+font-style: italic;
+text-align: right;
+font-size: 8px;
+}
+/*slogan en blanc*/
+#slogan {
+color:white;
+text-align: center;
+margin:auto;
+font-size: 40px;
+margin-right:3rem;
+}
+
+#sloganone {
+	color:white;
+	list-style-type: none;
+	font-size: 30px;
+}
+
+/*menu*/
+#menuhaut {
+	height:51px;
+	background-color: white;
+	margin-top: -15px;
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+font-family: 'Anton', sans-serif;
+
+}
+/*éléments de la liste*/
+#menuhaut li{
+display:inline;
+margin-left:30px;
+}
+
+/*les éléments de la liste liens*/
+#menuhaut li a {
+	text-decoration: none;
+	font-family: 'Anton', sans-serif;
+	color:black;
+	padding:9px 16px;
+}
+/*quand on passe la souris dessus #03542D*/
+#menuhaut a:hover{
+background-color:#FFE22A;
+
+}
+/*titre bloc*/
+
+
+body {
+	background-color: white;
+}
+
+.container {
+	display:block;
+	background-color: white;
+	height:100%;
+	text-align: center;
+	width:100%;
+	margin:auto;
+	margin-bottom: 20px;
+}
+
+.footer {
+	background-color: black;
+	color:white;
+	height:50px;
+	text-align:center;
+	font-family: 'Roboto', sans-serif;
+display:flex;
+align-items: center;
+justify-content: center;
+font-size:10px;
+margin-top:-20px;
+}
+
+.secondimage{
+	border-radius:50%;
+
+}
+
+.firstimage {
+width:60%;	
+}
+
+.tablo {
+	margin:auto;
+	margin-top: 50px;
+}
+
+.myform {
+	background-color:rgba(0,0,0,0.7) ;
+	width:20%;
+	text-align: justify;
+	margin:auto;
+	padding: 30px;
+	line-height: 10px;
+	color:white;
+	border-radius: 2%;
+	border:solid;
+	border-color:white;
+	border-width: 1px;
+	display:flex;
+	flex-direction: column;
+	font-family: 'Roboto', sans-serif;
+}
+
+.formtitre {
+display:block;
+width:250px;
+float:left;
+font-weight: bold;
+margin-bottom:10px;
+}
+
+.formfirstinput {
+line-height: 10px;
+margin-bottom: 30px;
+width:100%;
+}
+
+
+/*bloc bouton du formulaire*/
+.validation {
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	margin-top:20px;
+}
+
+#ok:hover{
+background-color:#FFE22A;
+color:black;
+cursor:pointer;
+} 
+/*bloc*/
+#ok {
+padding:10px;
+font-family: 'Roboto', sans-serif;
+width:70%;
+background-color:transparent;
+border-width:1.5px;
+border-color: white;
+color:white;
+font-size: 18px;
+border-radius: 5%;
+}
+
+
+
+.radiolist {
+	display:flex;
+	flex-direction: row;
+
+}
+
+.radiolistitem {
+line-height: 40px;
+display:flex;
+flex-direction: row;
+align-items: center;
+justify-content: flex-start;
+}
+
+.car {
+	height: 100%;
+	width: 100%;
+	margin:auto;
+
+}
+
+.firstpart {
+	background-image: url('mesimages/bluecar_50.jpg');
+	background-position: center;
+	background-size: cover;
+	width:100%;
+	height:700px;
+	background-repeat:no-repeat;
+	display:flex;
+	flex-direction: column;
+	margin:auto;
+}
+
+.icone {
+	height: 35px;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+.radiolistcol {
+	display:flex;
+	flex-direction:column;
+	justify-content: flex-start;
+	width:60%;
+}
+
+#calendarone  {
+	font-family: 'Roboto', sans-serif;
+}
+
+#calendartwo {
+	font-family: 'Roboto', sans-serif;
+}
