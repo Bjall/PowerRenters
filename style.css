@@ -1,4 +1,6 @@
-
+html{
+    border:0;
+}
 
 /* première bande noire en haut*/
 #bandeau {
@@ -226,4 +228,156 @@ justify-content: flex-start;
 
 #calendartwo {
 	font-family: 'Roboto', sans-serif;
+}
+
+/* ----- CSS partie Benoit ------- */
+
+#container{
+    width:1503px;
+    background-color:#E8E8DF;
+    margin:auto;
+    font-family: 'Anton', sans-serif;
+    font-size:1em;
+}
+
+.liste_vehicule{
+    width:1050px;
+    background-color:white;
+    margin:auto;
+}
+
+.liste_vehicule>h1{
+    margin:0px 0px 10px 25px;
+    padding-top: 10px;
+}
+
+.vehicule_fiche{
+    height:285px;
+    width:1000px;
+    background-color:white;
+    margin:auto;
+    margin-top:20px;
+    display:flex;
+    border: solid 1px #E8E8DF;
+    font-size:18px;
+}
+		
+.vehicule_left{
+    height:245px;
+    width:400px;
+    margin:20px 0px 20px 20px;
+}
+
+.vehicule_middle{
+    width:300px;
+    margin-top:50px;
+}
+
+#categorie{
+    font-size:15px;
+    color:grey;
+    padding-left:10px;
+}
+
+#prix_par{
+    margin-top:49px;
+    background-color:#E8E8DF;
+    width:300px;
+    padding-left:10px;
+    padding-top: 2px;
+    height: 53px;
+    font-size:16px;
+}
+
+#prix{
+    margin-left:60px;
+    font-size:30px;
+}
+
+.vehicule_right{
+    width:300px;
+    margin-top:50px;
+    line-height: 180%;
+}
+
+.vehicule_right ul{
+    list-style:none;
+}
+
+.icone{
+    height:15px;
+    width:15px;
+    margin-right:10px;
+}
+
+.vehicule_right a{
+    display:block;
+    background-color:#FFE22A;
+    width:240px;
+    height:45px;
+    text-decoration:none;
+    text-align:center;
+    padding-top:10px;
+    color:black;
+    font-size:25px;
+    margin:auto;
+}
+
+.vehicule_right a:hover{
+    background-color:#FFE750;
+}
+
+.fiche{
+    display:flex;
+}
+
+.fiche_photo{
+    height:245px;
+    width:400px;
+}
+
+.fiche_details{
+    margin-left:20px;
+}
+
+#veh_nom{
+    margin-top:80px;
+    font-size:35px;
+    margin-bottom:0;
+}
+
+#veh_exemples{
+    font-size:12px;
+    color:#ED1C24;
+    margin-top:0;
+}
+
+#prix_veh{
+    margin-top:20px;
+}
+
+#tarif{
+    font-size:35px;
+    margin-left:20px;
+}
+
+.myform_fiche{
+    background-color:rgba(0,0,0,0.7) ;
+    width:90%;
+    text-align: justify;
+    margin:auto;
+    padding: 30px;
+    line-height: 10px;
+    color:white;
+    display:flex;
+    flex-direction: row;
+    font-family: 'Roboto', sans-serif;
+}
+
+#form_part{
+    width:50px;
+}
+
+.formsecondinput{
+    width:100px;
 }
