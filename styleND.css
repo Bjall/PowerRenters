@@ -177,6 +177,14 @@ margin-left:-6px;
 	margin-top:-10px;
 }
 
+#nouvclient {
+    display: flex;
+	flex-direction:row;
+	justify-content:center;
+	color : white;
+	margin-top : 20px;
+}
+
 .logocb{
 	width: 50px;
 	height: 50px;
