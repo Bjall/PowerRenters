@@ -156,13 +156,13 @@ width:100%;
 	margin-top:20px;
 }
 
-#ok:hover{
+.ok:hover{
 background-color:#FFE22A;
 color:black;
 cursor:pointer;
 } 
 /*bloc*/
-#ok {
+.ok {
 padding:10px;
 font-family: 'Roboto', sans-serif;
 width:70%;
@@ -174,7 +174,22 @@ font-size: 18px;
 border-radius: 5%;
 }
 
+#okfiche:hover {
+background-color:#FFE22A;
+color:black;
+cursor:pointer;
+}
 
+#okfiche {
+padding:10px;
+font-family: 'Roboto', sans-serif;
+background-color:transparent;
+border-width:1.5px;
+border-color: white;
+color:white;
+font-size: 18px;
+border-radius: 5%;
+}
 
 .radiolist {
 	display:flex;
