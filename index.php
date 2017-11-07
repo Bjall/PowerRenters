@@ -17,14 +17,14 @@
 </div>
 	<nav id="menuhaut">
 		<ul>
-		<li><a href="index.html" title="Page d'accueil">Accueil</a></li>
-		<li><a href="liste.html" title="Page liste">Agences</a></li>
-		<li><a href="fiche.html" title="Page formulaire">Voitures</a></li>
-		<li><a href="fiche.html" title="Page formulaire">Utilitaires</a></li>
-		<li><a href="fiche.html" title="Page formulaire">Motos</a></li>
-		<li><a href="fiche.html" title="Page formulaire">Vélos</a></li>
-		<li><a href="fiche.html" title="Page formulaire">Professionnels</a></li>
-		<li><a href="fiche.html" title="Page formulaire">Votre compte</a></li>
+		<li><a href="index.php" title="Page d'accueil">Accueil</a></li>
+		<li><a href="liste.php" title="Page liste">Agences</a></li>
+		<li><a href="liste_voitures.php" title="Page formulaire">Voitures</a></li>
+		<li><a href="fiche.php" title="Page formulaire">Utilitaires</a></li>
+		<li><a href="fiche.php" title="Page formulaire">Motos</a></li>
+		<li><a href="fiche.php" title="Page formulaire">Vélos</a></li>
+		<li><a href="fiche.php" title="Page formulaire">Professionnels</a></li>
+		<li><a href="creationCompte.php" title="Page formulaire">Votre compte</a></li>
 	</ul>
 	</nav>
 	<section class="container">
