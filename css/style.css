@@ -213,7 +213,7 @@ justify-content: flex-start;
 }
 
 .firstpart {
-	background-image: url('mesimages/bluecar_50.jpg');
+	background-image: url('../images/bluecar_50.jpg');
 	background-position: center;
 	background-size: cover;
 	width:100%;
