@@ -12,22 +12,22 @@
 	<nav class="bandeauadmin"> 
 		<img src="logopower.png" class="logopower">
 		<ul>
-			<li><a href="administrateur.html">Accueil administrateur</a></li>
+			<li><a href="administrateur.php">Accueil administrateur</a></li>
 			<li>
 				<a href="#">Clientèle</a>
 				<ul>
-					<li><a href="listeclient.html">Afficher la liste des clients</a></li>
-					<li><a href="adminaddcli.html">Ajouter un client</a></li>
+					<li><a href="listeclient.php">Afficher la liste des clients</a></li>
+					<li><a href="adminaddcli.php">Ajouter un client</a></li>
 				</ul>
 			</li>
 
 			<li>
 				<a href="#">Contrat</a>
 				<ul>
-					<li><a href="recherchercontrat.hmtl">Rechercher un contrat par numéro</a></li>
-					<li><a href="listecontrat.hmtl">Afficher la liste des contrats</a></li>
-					<li><a href="editercontrat.hmtl">Editer un contrat</a></li>
-					<li><a href="creercontrat.html">Créer un contrat</a></li>
+					<li><a href="recherchercontrat.php">Rechercher un contrat par numéro</a></li>
+					<li><a href="listecontrat.php">Afficher la liste des contrats</a></li>
+					<li><a href="editercontrat.php">Editer un contrat</a></li>
+					<li><a href="creercontrat.php">Créer un contrat</a></li>
 
 				</ul>
 			</li>
@@ -35,24 +35,24 @@
 			<li>
 				<a href="#">Véhicules</a>
 				<ul>
-					<li><a href="recherchermodele.html"> Rechercher un véhicule par modèle</a></li>
-					<li><a href="recherchemarque.html">Rechercher un véhicule par marque</a></li>
-					<li><a href="listevehicule.html">Afficher la liste des véhicules</a></li>
-					<li><a href="ajouterbehicule.html">Ajouterun véhicule</a></li>
+					<li><a href="recherchermodele.php"> Rechercher un véhicule par modèle</a></li>
+					<li><a href="recherchemarque.php">Rechercher un véhicule par marque</a></li>
+					<li><a href="listevehicule.php">Afficher la liste des véhicules</a></li>
+					<li><a href="ajouterbehicule.php">Ajouterun véhicule</a></li>
 				</ul>
 			</li>
 
 			<li>
 				<a href="#">Personnel</a>
 				<ul>
-					<li><a href="rechercherpersonnel.html">Rechercher un membre par nom</a></li>
-					<li><a href="listepersonnel.html">Afficher la liste du personnel</a></li>
-					<li><a href="ajoutermembre.html">Ajouter un membre</a></li>
+					<li><a href="rechercherpersonnel.php">Rechercher un membre par nom</a></li>
+					<li><a href="listepersonnel.php">Afficher la liste du personnel</a></li>
+					<li><a href="ajoutermembre.php">Ajouter un membre</a></li>
 				</ul>
 			</li>
 
 			<li>
-				<a href="adminstatistique.html">Statistiques</a>
+				<a href="adminstatistique.php">Statistiques</a>
 			</li>
 			<li>
 				<a href="#">Déconnexion</a>
@@ -75,8 +75,8 @@
 </body>
 
 <footer>
-	<a href="mentionlegales.html">Mentions legales</a>
-	<a href="apropos.html"> A propos</a>
+	<a href="mentionlegales.php">Mentions legales</a>
+	<a href="apropos.php"> A propos</a>
 	<a href="FAQ">FAQ</a>
 </footer>
 
