@@ -9,14 +9,14 @@
 	<body>
 		<nav id="menuhaut">
 			<ul>
-				<li><a href="index.php" title="Page d'accueil">Accueil</a></li>
-				<li><a href="liste.php" title="Page liste">Agences</a></li>
-				<li><a href="liste_voitures.php" title="Page formulaire">Voitures</a></li>
-				<li><a href="fiche.php" title="Page formulaire">Utilitaires</a></li>
-				<li><a href="fiche.php" title="Page formulaire">Motos</a></li>
-				<li><a href="fiche.php" title="Page formulaire">Vélos</a></li>
-				<li><a href="fiche.php" title="Page formulaire">Professionnels</a></li>
-				<li><a href="creationCompte.php" title="Page formulaire">Votre compte</a></li>
+				<li><a href="accueil.php" title="Page d'accueil">Accueil</a></li>
+		<li><a href="agence.php" title="Page liste">Agences</a></li>
+		<li><a href="liste_voitures.php" title="Page formulaire">Voitures</a></li>
+		<li><a href="liste_voitures.php" title="Page formulaire">Utilitaires</a></li>
+		<li><a href="liste_voitures.php" title="Page formulaire">Motos</a></li>
+		<li><a href="liste_voitures.php" title="Page formulaire">Vélos</a></li>
+		<li><a href="accueil.php" title="Page formulaire">Professionnels</a></li>
+		<li><a href="creationCompte.php" title="Page formulaire">Votre compte</a></li>
 			</ul>
 		</nav>
 
@@ -48,23 +48,28 @@
 						<a href="http://www.google.fr">XXX Prix véhicule</a>
 					</div>
 				</article>
+				<h1>Vos options et accessoires</h1>
 				<article class="vehicule_fiche">
-					<h1>Vos options et accessoires</h1>
+					
 					<div class="vehicule_left" id="accessoires">
 						<ul class="accessoireliste">
 							<li>
-								<input id="radioButton" type="radio">
-					<img src="images/siege.png" class="" id="siege">Siège auto
+								<input id="radioButton" type="checkbox">
+								<label>Siège auto</label>
+								
+					<img src="../images/siege.png" class="" id="siege">
 
 </li>
 <li>
-	<input id="radioButton" type="checkbox">
-					<img src="images/gps.png" class="" id="gps">GPS
+		<input id="radioButton" type="checkbox">
+	<label>GPS</label>
+
+					<img src="../images/gps.png" class="" id="gps">
 				</li>
 				</ul>
 				</div>
 				<div class="vehicule_right">
-				<a href="http://www.google.fr">XXX Prix véhicule</a>
+				<a href="http://www.google.fr">XXX Prix options</a>
 				</div>
 				</article>
 			</section>

@@ -13,7 +13,7 @@
 </div>
 	<nav id="menuhaut">
 		<ul>
-		<li><a href="index.php" title="Page d'accueil">Accueil</a></li>
+		<li><a href="accueil.php" title="Page d'accueil">Accueil</a></li>
 		<li><a href="liste.php" title="Page liste">Liste</a></li>
 		<li><a href="fiche.php" title="Page formulaire">Fiche</a></li>
 	</ul>

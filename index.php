@@ -17,7 +17,7 @@
 </div>
 	<nav id="menuhaut">
 		<ul>
-			<li><a href="views/index.php" title="Page d'accueil">Accueil</a></li>
+			<li><a href="views/agence.php" title="Page d'accueil">Accueil</a></li>
 			<li><a href="views/liste.php" title="Page liste">Agences</a></li>
 			<li><a href="views/liste_voitures.php" title="Page formulaire">Voitures</a></li>
 			<li><a href="views/fiche.php" title="Page formulaire">Utilitaires</a></li>
