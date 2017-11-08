@@ -3,8 +3,8 @@
 	<head>	
 		<title> Se Connecter </title>
 		<meta charset="UTF-8">
-		<link rel="stylesheet" type="text/css" href="styleND.css" />
-		<link rel="stylesheet" type="text/css" href="stylemenu.css" />
+		<link rel="stylesheet" type="text/css" href="../css/styleND.css" />
+		<link rel="stylesheet" type="text/css" href="../css/stylemenu.css" />
 		<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 	</head>
 	<body>
@@ -22,7 +22,7 @@
     </nav>
     <div id="bandeau">
          <ul class="listeb">
-			<li><img src="mesimages/logonegatif.png" alt="image article" class="logo"/></li>
+			<li><img src="../images/logonegatif.png" alt="image article" class="logo"/></li>
 			<li><p id="slogan">Power Renters</p></li>
 		</ul>
 	</div>

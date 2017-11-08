@@ -3,7 +3,7 @@
 	<head>
 		<title>Power Renters - Location tous véhicules</title>
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="style.css"/>
+		<link rel="stylesheet" href="../css/style.css"/>
 		<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 	</head>
 	<body>
@@ -22,7 +22,7 @@
 
 		<div id="bandeau">
 			<ul class="listeb">
-				<li><img src="images/logonegatif.png" alt="image article" class="logo"/></li>
+				<li><img src="../images/logonegatif.png" alt="image article" class="logo"/></li>
 		    	<li><p id="slogan">Power Renters</p></li>
 			</ul>
 		</div>
@@ -30,7 +30,7 @@
 		<div id="container">
 			<section class="liste_vehicule">
 				<article class="fiche">
-					<img class="fiche_photo" src="images/fiat-500.png">
+					<img class="fiche_photo" src="../images/fiat-500.png">
 					<aside class="fiche_details">
 						<h1 id="veh_nom">Fiat 500</h1>
 						<p id="veh_exemples">Fiat 500, Renault Twingo, Opel Adam, Smart Forfou</p>

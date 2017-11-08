@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Power Renters</title>
-	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/style.css"/>
 
 	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto|Slabo+27px" rel="stylesheet">
@@ -23,7 +23,7 @@
 	</nav>
 		<div id="bandeau">
 			<ul class="listeb">
-<li><img src="mesimages/logonegatif.png" alt="image article" class="logo"/></li>
+<li><img src="../images/logonegatif.png" alt="image article" class="logo"/></li>
 <li id="sloganone">Louez votre prochaine aventure</li>
 	<li><p id="slogan">Power Renters</p></li>
 </ul>
@@ -53,13 +53,13 @@ post: info dans la requete http</p> type input: text zone monoligne, password pe
 <div class="radiolistcol">	
 <div class="radiolistitem">
 <input type="radio"/>
-<img src="mesimages/car.svg" class="icone"/>
+<img src="../icones/car.svg" class="icone"/>
 <label class="">Voitures</label>
 </div>
 
 <div class="radiolistitem">
 <input type="radio"/>
-<img src="mesimages/van.svg" class="icone"/>
+<img src="../icones/van.svg" class="icone"/>
 <label class="">Utilitaires</label>
 </div>
 </div>
@@ -67,13 +67,13 @@ post: info dans la requete http</p> type input: text zone monoligne, password pe
 <div class="radiolistcol">
 <div class="radiolistitem">
 <input type="radio"/>
-<img src="mesimages/motorbike.svg" class="icone"/>
+<img src="../icones/motorbike.svg" class="icone"/>
 <label class="">Motos</label>
 </div>
 
 <div class="radiolistitem">
 <input type="radio"/>
-<img src="mesimages/bicycle.svg" class="icone"/>
+<img src="../icones/bicycle.svg" class="icone"/>
 <label class="">Vélos</label>
 </div>
 </div>

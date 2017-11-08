@@ -3,14 +3,14 @@
 <html>
 
 <head>
-	<link rel="stylesheet" type="text/css" href="adminstyle.css">
+	<link rel="stylesheet" type="text/css" href="../css/adminstyle.css">
 	<title>Administrateur</title>
 	<meta charset="UTF-8">
 </head>
 
 <body>
 	<nav class="bandeauadmin"> 
-		<img src="logopower.png" class="logopower">
+		<img src="../images/logopower.png" class="logopower">
 		<ul>
 			<li><a href="administrateur.php">Accueil administrateur</a></li>
 			<li>
@@ -101,9 +101,9 @@
 </body>
 
 <footer>
-	<a href="mentionlegales.php">Mentions legales</a>
-	<a href="apropos.php"> A propos</a>
-	<a href="FAQ">FAQ</a>
+	<a href="../views/mentionlegales.php">Mentions legales</a>
+	<a href="../views/apropos.php">A propos</a>
+	<a href="../views/faq.php">FAQ</a>
 </footer>
 
 

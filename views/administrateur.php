@@ -3,14 +3,14 @@
 <html>
 
 <head>
-	<link rel="stylesheet" type="text/css" href="adminstyle.css">
+	<link rel="stylesheet" type="text/css" href="../css/adminstyle.css">
 	<title>Administrateur</title>
 	<meta charset="UTF-8">
 </head>
 
 <body>
 	<nav class="bandeauadmin"> 
-		<img src="logopower.png" class="logopower">
+		<img src="../images/logopower.png" class="logopower">
 		<ul>
 			<li><a href="administrateur.php">Accueil administrateur</a></li>
 			<li>
@@ -64,8 +64,8 @@
 		<p class= "contenu">Bienvenue, administrateur.</p>
 		<p class= "contenu">Accès rapide</p>
 	</div>
-	<img src="personnes.png" class="imagepersonne">
-	<img src="voiture.png" class="imagevoiture">
+	<img src="../images/personnes.png" class="imagepersonne">
+	<img src="../images/voiture.png" class="imagevoiture">
 	<div class="formulaire">
 		<label for="numeroclient" class="contenuform">Rechercher un client par numéro:</label><input  type="text" name="numeroclient" class="contenuform"/> <input type="submit" name="submit" class="contenuform"/><br/>
 		<label for="nomclient" class="contenuform">Rechercher un client par nom:</label><input type="text" name="nomclient" class="contenuform"/> <input type="submit" name="submit" class="contenuform"/><br/>
@@ -77,7 +77,7 @@
 <footer>
 	<a href="mentionlegales.php">Mentions legales</a>
 	<a href="apropos.php"> A propos</a>
-	<a href="FAQ">FAQ</a>
+	<a href="faq.php">FAQ</a>
 </footer>
 
 

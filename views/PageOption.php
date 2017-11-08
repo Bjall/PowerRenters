@@ -3,7 +3,7 @@
 	<head>
 		<title>Power Renters - Location tous véhicules</title>
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="style.css"/>
+		<link rel="stylesheet" href="../css/style.css"/>
 		<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 	</head>
 	<body>
@@ -22,7 +22,7 @@
 
 		<div id="bandeau">
 			<ul class="listeb">
-				<li><img src="images/logonegatif.png" alt="image article" class="logo"/></li>
+				<li><img src="../images/logonegatif.png" alt="image article" class="logo"/></li>
 		    	<li><p id="slogan">Power Renters</p></li>
 			</ul>
 		</div>
@@ -32,7 +32,7 @@
 				<h1>Votre réservation</h1>
 
 				<article class="vehicule_fiche">
-					<img class="vehicule_left" src="images/fiat-500.png">
+					<img class="vehicule_left" src="../images/fiat-500.png">
 					<div class="vehicule_middle">
 						<p><span id="categorie">Berline | Economique<span></p>
 						<p><span id="veh_exemples">Fiat 500, Renault Twingo, Opel Adam, Smart Forfour<span><p>
@@ -40,10 +40,10 @@
 					</div>
 					<div class="vehicule_right">
 						<ul>
-							<li><img class="icone" src="icones/clim.svg">Climatisation</li>
-							<li><img class="icone" src="icones/gearbox.svg">Manuelle</li>
-							<li><img class="icone" src="icones/users.svg">4 places</li>
-							<li><img class="icone" src="icones/doors.svg">3 portes</li>
+							<li><img class="icone" src="../icones/clim.svg">Climatisation</li>
+							<li><img class="icone" src="../icones/gearbox.svg">Manuelle</li>
+							<li><img class="icone" src="../icones/users.svg">4 places</li>
+							<li><img class="icone" src="../icones/doors.svg">3 portes</li>
 						</ul>
 						<a href="http://www.google.fr">XXX Prix véhicule</a>
 					</div>
