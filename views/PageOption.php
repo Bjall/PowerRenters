@@ -50,6 +50,22 @@
 				</article>
 				<article class="vehicule_fiche">
 					<h1>Vos options et accessoires</h1>
+					<div class="vehicule_left" id="accessoires">
+						<ul class="accessoireliste">
+							<li>
+								<input id="radioButton" type="radio">
+					<img src="images/siege.png" class="" id="siege">Siège auto
+
+</li>
+<li>
+	<input id="radioButton" type="checkbox">
+					<img src="images/gps.png" class="" id="gps">GPS
+				</li>
+				</ul>
+				</div>
+				<div class="vehicule_right">
+				<a href="http://www.google.fr">XXX Prix véhicule</a>
+				</div>
 				</article>
 			</section>
 		</div>
