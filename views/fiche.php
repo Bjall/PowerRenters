@@ -6,18 +6,19 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto|Slabo+27px" rel="stylesheet">
+	<meta charset="utf-8">
 </head>
 <body>
 	<nav id="menuhaut">	
 		<ul>
-		<li><a href="index.html" title="Page d'accueil">Accueil</a></li>
-		<li><a href="liste.html" title="Page liste">Agences</a></li>
-		<li><a href="fiche.html" title="Page formulaire">Voitures</a></li>
-		<li><a href="fiche.html" title="Page formulaire">Utilitaires</a></li>
-		<li><a href="fiche.html" title="Page formulaire">Motos</a></li>
-		<li><a href="fiche.html" title="Page formulaire">Vélos</a></li>
-		<li><a href="fiche.html" title="Page formulaire">Professionnels</a></li>
-		<li><a href="fiche.html" title="Page formulaire">Votre compte</a></li>
+		<li><a href="index.php" title="Page d'accueil">Accueil</a></li>
+		<li><a href="liste.php" title="Page liste">Agences</a></li>
+		<li><a href="liste_voitures.php" title="Page formulaire">Voitures</a></li>
+		<li><a href="fiche.php" title="Page formulaire">Utilitaires</a></li>
+		<li><a href="fiche.php" title="Page formulaire">Motos</a></li>
+		<li><a href="fiche.php" title="Page formulaire">Vélos</a></li>
+		<li><a href="fiche.php" title="Page formulaire">Professionnels</a></li>
+		<li><a href="creationCompte.php" title="Page formulaire">Votre compte</a></li>
 	</ul>
 	</nav>
 		<div id="bandeau">
@@ -39,8 +40,10 @@ post: info dans la requete http</p> type input: text zone monoligne, password pe
 
 <label class="formtitre">Date de début:</label>
 <input type="date" class="formfirstinput" id="calendarone"/>
+<input type="time" class="formfirstinput" id="calendarone"/>
 <label class="formtitre">Date de fin:</label>
 <input type="date" class="formfirstinput" id="calendartwo"/>
+<input type="time" class="formfirstinput" id="calendarone"/>
 <label class="formtitre">Ville:</label>
 <input type="text" class="formfirstinput""/></br>
 <label class="formtitre">Choisissez votre véhicule:</label></br>
@@ -175,7 +178,7 @@ post: info dans la requete http</p> type input: text zone monoligne, password pe
 <option value="	1970	" >	1970	</option>
 </select> -->
 <div class="validation">
-<input type="submit" id="ok">
+<input type="submit" class="ok">
 </div>
 </form>
 
