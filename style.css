@@ -396,3 +396,34 @@ justify-content: flex-start;
 .formsecondinput{
     width:100px;
 }
+
+#gps {
+    width:140px;
+    height:100px;
+}
+
+#siege {
+width:140px;
+    height:140px;
+}
+
+#accessoires {
+    margin-top:100px;
+height:200px;
+
+}
+
+
+.myform_fiche a {
+    display:block;
+    background-color:#FFE22A;
+    width:240px;
+    height:45px;
+    text-decoration:none;
+    text-align:center;
+    padding-top:10px;
+    color:black;
+    font-size:25px;
+    margin:auto;
+}
+
