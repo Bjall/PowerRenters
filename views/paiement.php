@@ -1,33 +1,19 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 	<head>	
 		<title> Paiement </title>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="../css/styleND.css" />
 		<link rel="stylesheet" type="text/css" href="../css/stylemenu.css" />
+		<link rel="stylesheet" href="../css/style.css"/>
 		<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 	</head>
 	<body>
-	<nav id="menuhaut">
-        <ul>
-      <li><a href="accueil.php" title="Page d'accueil">Accueil</a></li>
-		<li><a href="agence.php" title="Page liste">Agences</a></li>
-		<li><a href="liste_voitures.php" title="Page formulaire">Voitures</a></li>
-		<li><a href="liste_voitures.php" title="Page formulaire">Utilitaires</a></li>
-		<li><a href="liste_voitures.php" title="Page formulaire">Motos</a></li>
-		<li><a href="liste_voitures.php" title="Page formulaire">Vélos</a></li>
-		<li><a href="accueil.php" title="Page formulaire">Professionnels</a></li>
-		<li><a href="creationCompte.php" title="Page formulaire">Votre compte</a></li>
-    </ul>
-    </nav>
-    <div id="bandeau">
-         <ul class="listeb">
-			<li><img src="../images/logonegatif.png" alt="image article" class="logo"/></li>
-			<li><p id="slogan">Power Renters</p></li>
-		</ul>
-	</div>
 
-<form class="myformpaiement" >
+ 		<?php 
+include '../header.php';
+	?>
+<form class="myformpaiement">
 	<div class="divent">	
 		<p>Paiement sécurisé sur internet</p>
 		<p>Montant de la transaction : XX euros </p>
@@ -60,10 +46,11 @@
 		</select>
 	</div>
 	<label class="formlabel">Cryptogramme visuel de votre carte : </label><input class="forminput" id="crypt" type="text" name="ttNumCarte" value="" required /> <br>
-	<div class="validationPaiement">
+	<div class="validationPaiement"/>
 		<input type="submit" id="ok">
 	</div>
 	<p>Votre transaction est sécurisé </p>
 	<p>Votre paiement sera réalisé en toute sécurité </p>
 </form>
-
+</body>
+</html>

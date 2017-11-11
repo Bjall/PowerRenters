@@ -7,7 +7,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 	</head>
 	<body>
-		<nav id="menuhaut">
+		<!-- <nav id="menuhaut">
 			<ul>
 				<li><a href="accueil.php" title="Page d'accueil">Accueil</a></li>
 		<li><a href="agence.php" title="Page liste">Agences</a></li>
@@ -25,8 +25,10 @@
 				<li><img src="../images/logonegatif.png" alt="image article" class="logo"/></li>
 		    	<li><p id="slogan">Power Renters</p></li>
 			</ul>
-		</div>
-
+		</div> -->
+		<?php 
+include '../header.php';
+	?>
 		<div id="container">
 			<section class="liste_vehicule">
 				<h1>Votre réservation</h1>
