@@ -1,5 +1,5 @@
 <?php
-require_once '../Controleur/controleur_Admin.php';
+require_once '../Controllers/controleur_Admin.php';
 $listeClient = isset ($listeClient) ? $listeClient : NULL;
 	if ($listeClient!=null) {
 				echo'<h2>Liste de client</h2>
