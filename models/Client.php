@@ -9,13 +9,12 @@ class Client{
 	private $cli_civ_id;
 	private $cli_mdp;
 	private $cli_stat_id;
-	private $adresse_l1;
-	private $adresse_l2;
-	private $adresse_l3;
-	private $cp_id;
-	private $cli_id;
-	private $type_adr_id;
-	private $cli_id;
+	//private $adresse_l1;
+	//private $adresse_l2;
+	//private $adresse_l3;
+	//private $cp_id;
+	//private $cli_id;
+	//private $type_adr_id;
 	private $date_permis;
 	private $typepermis_id;	
 	//rajouter fonction calcul âge
@@ -85,13 +84,13 @@ class Client{
 		$this->cli_stat_id = $cli_stat_id;
 	}
 
-	public function getAdresse_l1(){
+/*	public function getAdresse_l1(){
 		return $this->adresse_l1;
 	}
 
 	public function setAdresse_l1($adresse_l1){
 		$this->adresse_l1 = $adresse_l1;
-	}
+	}*/
 
 	public function getAdresse_l2(){
 		return $this->adresse_l2;
@@ -133,13 +132,6 @@ class Client{
 		$this->type_adr_id = $type_adr_id;
 	}
 
-	public function getCli_id(){
-		return $this->cli_id;
-	}
-
-	public function setCli_id($cli_id){
-		$this->cli_id = $cli_id;
-	}
 
 	public function getDate_permis(){
 		return $this->date_permis;
