@@ -16,8 +16,8 @@
 			<li>
 				<a href="#">Clientèle</a>
 				<ul>
-					<li><a href="listeclient.php">Afficher la liste des clients</a></li>
-					<li><a href="adminaddcli.php">Ajouter un client</a></li>
+					<li><a href="admin_ListeClient.php">Afficher la liste des clients</a></li>
+					<li><a href="adminAddCli.php">Ajouter un client</a></li>
 				</ul>
 			</li>
 

@@ -8,7 +8,7 @@ class ConnexionBDD {
 
 	private static $url = 'mysql:host=localhost;dbname=powerrenters;charset=utf8';
 	private static $login = 'root';
-	private static $passwd = '';
+	private static $passwd = 'root';
 
 	private function ConnexionBDD() {
 		try {
