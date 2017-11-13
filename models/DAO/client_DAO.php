@@ -1,25 +1,24 @@
 <?php
-require_once '../models/dao/connexionBdd.class.php';
+require_once '../controllers/dbconn.php';
 require_once '../models/Client.php'; 
 require_once '../models/Adresse.php'; 
 class client_DAO {
 
-public $con;	
-	
-function acces_DAO() {
-	$this->con=ConnexionBDD::getConnexion();
-}	
 
-function  Liste_Client() { 
-		//	try{
+/*function  Liste_Client() { 
+			try{
 			$this->con=ConnexionBDD::getConnexion();
-			$req1 = $this->con->prepare("call SP_Liste_Client()"); //call SP_Liste_Client(@erreurCode,@sqlState,@erreurMessage)il faut mettre dans la proc stocké			
+			$req1 = $this->con->prepare("call SP_Liste_Client()"); //call SP_Liste_Client(@erreurCode,@sqlState,@erreurMessage)il faut mettre dans la proc stocké
+			
 			$req1->execute();
+			//var_dump($req1);
 			$data=$req1->fetchAll(PDO::FETCH_ASSOC);
+			//$data2=$req1->fetchAll(PDO::FETCH_CLASS,'adresse');
 			$req1->closeCursor();
+			//var_dump($data);
 			return $data;
 			
-		/*	$resultat=$this->con->query("select @errCode, @errState, @msgErreur")->fetch();		
+			$resultat=$this->con->query("select @errCode, @errState, @msgErreur")->fetch();		
 					if ($resultat[0]!=0)
 					Switch($resultat[0]){				
 					case 1366 : throw new Exception('Merci de rentrer un nombre'.$resultat[1].' '.$resultat[2]);
@@ -30,7 +29,35 @@ function  Liste_Client() {
 			}
 				catch (PDOException $e) {
 				echo '<br>Erreur de connexion!!! :   ' . $e->getMessage();
-				}*/
+				}
+		}*/
+		
+function  Liste_Client() { 
+	try{
+		/*
+		* Ouverture de la connexion à la base de données
+		*/
+		$dbConn = new PDO('mysql:host=localhost;charset=utf8;dbname=powerrenters', 'root', '');
+	}catch (Exception $ex){
+		/*
+		 * En cas d'erreur, gestion d'une exception (à voir plus tard)
+		 */
+		print($ex->getMessage());
+	}
+				
+			$SQLQuery ='call SP_Liste_Client()';
+			$SQLResult = $dbConn->query($SQLQuery);
+						if ($SQLResult->rowCount() == 0){
+						print('<tr><td colspan="6">Aucun enregistrement ne correspond à la demande</td></tr>');
+					}else{
+			$SQLRow = $SQLResult->fetchAll(PDO::FETCH_ASSOC);
+			
+			var_dump ($SQLRow);
+			$SQLResult->closeCursor();
+			return  $SQLRow;
+			
+					}
+			
 		}
 /*		
 function Ajout_client($pers){ 
