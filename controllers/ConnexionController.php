@@ -1,13 +1,6 @@
 <?php
-	// Connexion à la BDD
-	try
-	{
-		$bdd = new PDO('mysql:host=localhost;dbname=powerrenters;charset=utf8', 'root', '');
-	}
-	catch(Exception $e)
-	{
-		die('Erreur : '.$e->getMessage());
-	}
+	// Requiert la connexion à la BDD
+	include_once('../load.php');
 
 	// Préparation de la requête
 	$req = $bdd->prepare('SELECT * FROM client WHERE cli_mail = :mail AND cli_mdp = :pass');
@@ -25,8 +18,23 @@
 	if(!empty($user)) {
 		$_SESSION['visiteur'] = true;
 		$_SESSION['visiteur_id'] = $user['cli_id'];
-		// Redirection vers la page d'accueil
-		header('Location: http://localhost/PowerRenters/');
+
+		// Vérification si le visiteur est un client ou un employé
+		$query = $bdd->prepare('SELECT * FROM client WHERE cli_id = :id');
+		
+		$query->execute(array('id' => $_SESSION['visiteur_id']));
+
+		$whois = $query->fetch();
+
+		if ($whois['cli_stat_id'] == '3') {
+			// Redirection vers la page d'accueil back
+			print('Vous allez être connecté en tant qu\'admin');
+
+		} else {
+			// Redirection vers la page d'accueil front
+			header('Location: http://localhost/PowerRenters/');
+		}
+
 	} else {
 		$_SESSION['info'] = 'Mauvais identifiants';
 		print($_SESSION['info']);
