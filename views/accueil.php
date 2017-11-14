@@ -27,7 +27,7 @@
 						<input type="text" class="formfirstinput""/></br>
 					<label class="formtitre">Choisissez votre véhicule:</label></br>
 						<div class="radiolist">
-							<div class="radiolistcol">	
+							<div class="radiolistcol">
 								<div class="radiolistitem">
 									<input type="radio"/><img src="/PowerRenters/icones/car.svg" class="icone"/><label class="">Voitures</label>
 								</div>
