@@ -11,7 +11,7 @@
 
 	<body>
 		<?php 
-			include '../header.php';
+			include 'header.php';
 		?>
 
 		<!-- Formulaire de connexion -->
@@ -23,7 +23,7 @@
 				<!-- Mot de passe -->
 				<input type="password" name="password" placeholder="Mot de passe">
 				<!-- Submit -->
-				<input type="submit" value="S'inscrire">
+				<input type="submit" value="Se connecter">
 			</form>
 		</fieldset>
 	</body>
