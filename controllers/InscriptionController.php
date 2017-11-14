@@ -1,25 +1,29 @@
 <?php
-	include_once('Client.php'); // Implémenter avec la bonne classe client
-
+	// Connexion à la BDD
 	try
 	{
-		$bdd = new PDO('mysql:host=localhost;dbname=site;charset=utf8', 'root', '');
+		$bdd = new PDO('mysql:host=localhost;dbname=powerrenters;charset=utf8', 'root', '');
 	}
 	catch(Exception $e)
 	{
-	        die('Erreur : '.$e->getMessage());
+		die('Erreur : '.$e->getMessage());
 	}
 
-	$req = $bdd->prepare('INSERT INTO clients (cli_nom, cli_prenom, cli_date_naissance, cli_mail, cli_mdp) VALUES (:nom, :prenom, :ddn, :mail, :passwd)');
+	// Préparation de la requête pour insérer les données
+	$req = $bdd->prepare('INSERT INTO client (cli_civ_id, cli_nom, cli_prenom, cli_date_naissance, cli_mail, cli_mdp, cli_stat_id) VALUES (:civ, :nom, :prenom, :ddn, :mail, :passwd, :stat)');
+
+	// Exécution de la requête avec les données saisies dans le formulaire
 	$req->execute(array(
+		'civ' => $_POST['cbCivilite'],
 		'nom' => $_POST['nom'],
 		'prenom' => $_POST['prenom'],
 		'ddn' => $_POST['birthdate'],
 		'mail' => $_POST['email'],
-		'passwd' => $_POST['password']
+		'passwd' => $_POST['password'],
+		'stat' => $_POST['cbStat']
 		));
 
-	echo 'Vous êtes bien inscrit !';
+	print('Vous êtes désormais inscrit.');
 
 	?>
 
