@@ -84,16 +84,33 @@ $listeClient = isset ($listeClient) ? $listeClient : NULL;
 					<td>Code postal</td>
 					<td>Ville</td>
 					</tr>';
-					foreach($listeClient as $client){
+					$script = '';
+					
+							
+							
+							for ($i=0;$i<count($listeClient);$i++){
+								$script .= '<tr>';
+								$script .= '<td>'.$listeClient[$i]->getCli_nom().'</td>';
+								$script .= '<td>'.$listeClient[$i]->getCli_prenom().'</td>';
+								$script .= '</tr>';}
+							
+						
+					print($script);
+					/*foreach($listeClient as $client){
 						echo'<tr>';
 						foreach ($client as $information){						
 						
 					echo'					
 						<td>'.$information.'</td>';	
 						}echo'</tr>';
-					}
+					}*/
 					echo '</table>';
+					
 	}
+	$toto = new client_DAO;
+	
+	$var= $toto->cherche_Client($_POST['numeroclient']);
+	var_dump($var);
 ?>
 	</div>
 

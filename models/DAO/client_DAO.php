@@ -2,35 +2,11 @@
 require_once '../controllers/dbconn.php';
 require_once '../models/Client.php'; 
 require_once '../models/Adresse.php'; 
+
 class client_DAO {
 
 
-/*function  Liste_Client() { 
-			try{
-			$this->con=ConnexionBDD::getConnexion();
-			$req1 = $this->con->prepare("call SP_Liste_Client()"); //call SP_Liste_Client(@erreurCode,@sqlState,@erreurMessage)il faut mettre dans la proc stocké
-			
-			$req1->execute();
-			//var_dump($req1);
-			$data=$req1->fetchAll(PDO::FETCH_ASSOC);
-			//$data2=$req1->fetchAll(PDO::FETCH_CLASS,'adresse');
-			$req1->closeCursor();
-			//var_dump($data);
-			return $data;
-			
-			$resultat=$this->con->query("select @errCode, @errState, @msgErreur")->fetch();		
-					if ($resultat[0]!=0)
-					Switch($resultat[0]){				
-					case 1366 : throw new Exception('Merci de rentrer un nombre'.$resultat[1].' '.$resultat[2]);
-					break;
-					default : throw new Exception('Merci de contacter l\'admin '.$resultat[1].' '.$resultat[2]);		
-					break;
-					}
-			}
-				catch (PDOException $e) {
-				echo '<br>Erreur de connexion!!! :   ' . $e->getMessage();
-				}
-		}*/
+
 		
 function  Liste_Client() { 
 	try{
@@ -44,22 +20,62 @@ function  Liste_Client() {
 		 */
 		print($ex->getMessage());
 	}
-				
+			//global $dbConn;	
 			$SQLQuery ='call SP_Liste_Client()';
 			$SQLResult = $dbConn->query($SQLQuery);
 						if ($SQLResult->rowCount() == 0){
 						print('<tr><td colspan="6">Aucun enregistrement ne correspond à la demande</td></tr>');
 					}else{
-			$SQLRow = $SQLResult->fetchAll(PDO::FETCH_ASSOC);
-			
-			var_dump ($SQLRow);
+			//$SQLRow = $SQLResult->fetchObject();
+			//var_dump($SQLResult );	
+				
+			while ($SQLRow = $SQLResult->fetchObject()){
+			$client[] = new client($SQLRow->cli_civ_denomination,$SQLRow->cli_date_naissance,$SQLRow->cli_id,$SQLRow->cli_mail,$SQLRow->cli_nom,$SQLRow->cli_permis_numero,$SQLRow->cli_prenom,
+			$SQLRow->cli_stat_libelle,$SQLRow->adresse_l1,$SQLRow->adresse_l2,$SQLRow->adresse_l3,$SQLRow->cp_codepostal,$SQLRow->cp_ville);
+			}	
+			//var_dump($SQLRow);			
 			$SQLResult->closeCursor();
-			return  $SQLRow;
+			return  $client;
 			
 					}
 			
 		}
-/*		
+		
+function  cherche_Client($id) { 
+	
+	try{
+		/*
+		* Ouverture de la connexion à la base de données
+		*/
+		$dbConn = new PDO('mysql:host=localhost;charset=utf8;dbname=powerrenters', 'root', 'root');
+	}catch (Exception $ex){
+		/*
+		 * En cas d'erreur, gestion d'une exception (à voir plus tard)
+		 */
+		print($ex->getMessage());
+	}
+			//global $dbConn;	
+			$SQLQuery ='select cli_civ_denomination, cli_date_naissance, cl.cli_id, cli_mail, cli_nom, cli_permis_numero, cli_prenom,cli_stat_libelle, adresse_l1,
+			adresse_l2, adresse_l3, cp_codepostal, cp_ville from civilite ci 
+			inner join client cl on cl.cli_civ_id=ci.cli_civ_id inner join statut_client sc on cl.cli_stat_id=sc.cli_stat_id 
+			inner join adresse a on cl.cli_id=a.cli_id inner join cpville cp on cp.cp_id=a.cp_id where cl.cli_id=:idpers';
+			$SQLResult = $dbConn->prepare($SQLQuery);
+			$SQLResult->bindValue(':idpers', $id);
+			$SQLResult->execute();	
+			$SQLRow = $SQLResult->fetchObject();
+			$Client = new Client($SQLRow->cli_civ_denomination,$SQLRow->cli_date_naissance,$SQLRow->cli_id,$SQLRow->cli_mail,$SQLRow->cli_nom,$SQLRow->cli_permis_numero,$SQLRow->cli_prenom,
+			$SQLRow->cli_stat_libelle,$SQLRow->adresse_l1,$SQLRow->adresse_l2,$SQLRow->adresse_l3,$SQLRow->cp_codepostal,$SQLRow->cp_ville);	
+			var_dump($SQLRow);
+			return $Client;
+			
+			
+}
+			
+		
+
+
+
+/*	
 function Ajout_client($pers){ 
 			try{			
 			$req1=$this->con->prepare("call SP_Ajout_client (:v_nom,:v_prenom,:v_civ_id,:v_date_naissance,:v_mail,:v_permis_numero,:v_adresse_l1,:v_adresse_l2,:v_adresse_l3,:v_cp_id,:v_mdp,:v_stat_id,:v_type_adr_id,:v_date_permis,:v_typepermis_id)"); //avec exception(:v_nom,@errCode, @errState, @msgErreur)			
