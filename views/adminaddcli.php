@@ -24,8 +24,8 @@
 			<li>
 				<a href="#">Contrat</a>
 				<ul>
-					<li><a href="adminRechercherContrat.php">Rechercher un contrat par numéro</a></li>
-					<li><a href="adminListeContrat.php">Afficher la liste des contrats</a></li>
+					<li><a href="recherchercontrat.php">Rechercher un contrat par numéro</a></li>
+					<li><a href="listecontrat.php">Afficher la liste des contrats</a></li>
 					<li><a href="editercontrat.php">Editer un contrat</a></li>
 					<li><a href="creercontrat.php">Créer un contrat</a></li>
 

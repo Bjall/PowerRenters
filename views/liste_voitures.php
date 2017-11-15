@@ -3,32 +3,14 @@
 	<head>
 		<title>Power Renters - Location tous véhicules</title>
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="../css/style.css"/>
+		<link rel="stylesheet" href="/PowerRenters/css/style.css"/>
 		<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 	</head>
-	<body>
-		<!-- <nav id="menuhaut">
-			<ul>
-				<li><a href="accueil.php" title="Page d'accueil">Accueil</a></li>
-				<li><a href="agence.php" title="Page liste">Agences</a></li>
-				<li><a href="liste_voitures.php" title="Page formulaire">Voitures</a></li>
-				<li><a href="liste_voitures.php" title="Page formulaire">Utilitaires</a></li>
-				<li><a href="liste_voitures.php" title="Page formulaire">Motos</a></li>
-				<li><a href="liste_voitures.php" title="Page formulaire">Vélos</a></li>
-				<li><a href="accueil.php" title="Page formulaire">Professionnels</a></li>
-				<li><a href="creationCompte.php" title="Page formulaire">Votre compte</a></li>
-			</ul>
-		</nav>
 
-		<div id="bandeau">
-			<ul class="listeb">
-				<li><img src="../images/logonegatif.png" alt="image article" class="logo"/></li>
-		    	<li><p id="slogan">Power Renters</p></li>
-			</ul>
-		</div> -->
+	<body>
 		<?php 
-include '../header.php';
-	?>
+			include_once('header.php');
+		?>
 		<div id="container">
 			<section class="liste_vehicule">
 				<h1>Notre flotte de véhicules</h1>
@@ -106,6 +88,5 @@ include '../header.php';
 				</article>
 			</section>
 		</div>
-
 	</body>
 </html>

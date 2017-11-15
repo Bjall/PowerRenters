@@ -154,11 +154,10 @@ body {
 	margin-bottom:20px;
 }
 	
-.divradio{
-margin-bottom:20px;
-font-family: 'Fira Sans', sans-serif;
-font-weight: bold;
-margin-left:-6px;
+.civcombo{
+	display:block;
+	margin-top: 20px;
+
 }
 
 .validation {
