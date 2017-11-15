@@ -1,0 +1,65 @@
+select modele.vehmmod_libelle as 'Modèle', mar.vehmar_libelle as 'Marque', statut_entretien_libelle as 'Statut'
+from statut_entretien as s inner join entretien as e  
+on s.statut_entretien_id = e.statut_entretien_id
+inner join vehicule as v 
+on v.veh_id = e.veh_id
+inner join vehm_modele as modele
+on v.vehmmod_id = modele.vehmmod_id
+inner join vehm_marque as mar
+on modele.vehmar_id = mar.vehmar_id
+where s.statut_entretien_id = 1;	 -- vehicule qui contiennent un entretien à  1 = vrai -- 
+-- incomplet car plusieurs fois le même vehicule si plusieurs entretiens fait et ne tient pas compte de la temporalité --
+
+--
+
+select contrat_id
+from contratdelocation
+where contrat_date_fin >= '2017-10-19' ; 
+
+--
+
+select cli_mail,cli_mdp
+from client
+where cli_mail=XX and cli_mdp=XX; 	-- connexion client --
+
+--
+
+insert into client(cli_nom, cli_prenom,cli_date_naissance, cli_mdp, cli_mail, cli_permis_numero, cli_stat_id, cli_civ_id)
+values ('Martin', 'Joseph', '1987-02-03', 'toto', 'martin.joshep@gmail.com', '0809332008456', 1, 2 );
+
+insert into adresse(adresse_l1, adresse_l2, adresse_l3, cli_id, type_adr_id, cp_id)
+values ('rue lolo', null, null, 11, 2, 10);
+
+insert into detenir (date_permis, cli_id, typepermis_id)
+values ('2015-06-21', 11, 4);	 -- transaction pour ajouter client --
+
+--
+
+update client 
+set cli_permis_numero = '0809332008478' 
+where cli_id = 11; -- modif numero de permis --
+
+--
+
+select vehmmod_libelle, vehmar_libelle
+from vehm_modele as vm inner join vehm_marque as vma
+on vm.vehmmod_id=vma.vehmar_id
+where vma.vehmar_libelle="Peugeot"; 	-- veh dont modèle est peugeot -- 
+
+--
+
+insert into rajouter(acc_id,contrat_id)
+values ((select acc_id from accessoire where acc_libelle='Siège auto' limit 1),
+	(select contrat_id from contratdelocation where cli_id=3 limit 1)); 	-- lier contrat et accessoire --
+
+--
+
+delete from adresse where cli_id=11;
+
+delete from detenir
+where cli_id=11;
+
+delete from client 
+where cli_id=11; 	 -- transaction pour supprimer client -- 
+
+--

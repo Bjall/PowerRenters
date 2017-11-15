@@ -1,0 +1,383 @@
+html{
+    border:0;
+}
+
+/* première bande noire en haut*/
+#bandeau {
+background-color: black;
+height:100px;
+font-family: 'Anton', sans-serif;
+}
+
+.listeb {
+	display: flex;
+	flex-direction: row;
+justify-content: space-between;
+align-items: center;
+margin-top: -0.7px;
+}
+
+/*logo*/
+#bandeau img{
+	height:80px;
+	margin-top: 10px;
+}
+/*ligne du tableau*/
+.lignebas {
+font-style: italic;
+text-align: right;
+font-size: 8px;
+}
+/*slogan en blanc*/
+#slogan {
+color:white;
+text-align: center;
+margin:auto;
+font-size: 40px;
+margin-right:3rem;
+}
+
+#sloganone {
+	color:white;
+	list-style-type: none;
+	font-size: 30px;
+}
+
+/*menu*/
+#menuhaut {
+	height:51px;
+	background-color: white;
+	margin-top: -15px;
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+font-family: 'Anton', sans-serif;
+
+}
+/*éléments de la liste*/
+#menuhaut li{
+display:inline;
+margin-left:30px;
+}
+
+/*les éléments de la liste liens*/
+#menuhaut li a {
+	text-decoration: none;
+	font-family: 'Anton', sans-serif;
+	color:black;
+	padding:9px 16px;
+}
+/*quand on passe la souris dessus #03542D*/
+#menuhaut a:hover{
+background-color:#FFE22A;
+
+}
+/*titre bloc*/
+
+
+body {
+	background-color: white;
+}
+
+.container {
+	display:block;
+	background-color: white;
+	height:100%;
+	text-align: center;
+	width:100%;
+	margin:auto;
+	margin-bottom: 20px;
+}
+
+.footer {
+	background-color: black;
+	color:white;
+	height:50px;
+	text-align:center;
+	font-family: 'Roboto', sans-serif;
+display:flex;
+align-items: center;
+justify-content: center;
+font-size:10px;
+margin-top:-20px;
+}
+
+.secondimage{
+	border-radius:50%;
+
+}
+
+.firstimage {
+width:60%;	
+}
+
+.tablo {
+	margin:auto;
+	margin-top: 50px;
+}
+
+.myform {
+	background-color:rgba(0,0,0,0.7) ;
+	width:20%;
+	text-align: justify;
+	margin:auto;
+	padding: 30px;
+	line-height: 10px;
+	color:white;
+	border-radius: 2%;
+	border:solid;
+	border-color:white;
+	border-width: 1px;
+	display:flex;
+	flex-direction: column;
+	font-family: 'Roboto', sans-serif;
+}
+
+.formtitre {
+display:block;
+width:250px;
+float:left;
+font-weight: bold;
+margin-bottom:10px;
+}
+
+.formfirstinput {
+line-height: 10px;
+margin-bottom: 30px;
+width:100%;
+}
+
+
+/*bloc bouton du formulaire*/
+.validation {
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	margin-top:20px;
+}
+
+#ok:hover{
+background-color:#FFE22A;
+color:black;
+cursor:pointer;
+} 
+/*bloc*/
+#ok {
+padding:10px;
+font-family: 'Roboto', sans-serif;
+width:70%;
+background-color:transparent;
+border-width:1.5px;
+border-color: white;
+color:white;
+font-size: 18px;
+border-radius: 5%;
+}
+
+
+
+.radiolist {
+	display:flex;
+	flex-direction: row;
+
+}
+
+.radiolistitem {
+line-height: 40px;
+display:flex;
+flex-direction: row;
+align-items: center;
+justify-content: flex-start;
+}
+
+.car {
+	height: 100%;
+	width: 100%;
+	margin:auto;
+
+}
+
+.firstpart {
+	background-image: url('mesimages/bluecar_50.jpg');
+	background-position: center;
+	background-size: cover;
+	width:100%;
+	height:700px;
+	background-repeat:no-repeat;
+	display:flex;
+	flex-direction: column;
+	margin:auto;
+}
+
+.icone {
+	height: 35px;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+.radiolistcol {
+	display:flex;
+	flex-direction:column;
+	justify-content: flex-start;
+	width:60%;
+}
+
+#calendarone  {
+	font-family: 'Roboto', sans-serif;
+}
+
+#calendartwo {
+	font-family: 'Roboto', sans-serif;
+}
+
+/* ----- CSS partie Benoit ------- */
+
+#container{
+    width:1503px;
+    background-color:#E8E8DF;
+    margin:auto;
+    font-family: 'Anton', sans-serif;
+    font-size:1em;
+}
+
+.liste_vehicule{
+    width:1050px;
+    background-color:white;
+    margin:auto;
+}
+
+.liste_vehicule>h1{
+    margin:0px 0px 10px 25px;
+    padding-top: 10px;
+}
+
+.vehicule_fiche{
+    height:285px;
+    width:1000px;
+    background-color:white;
+    margin:auto;
+    margin-top:20px;
+    display:flex;
+    border: solid 1px #E8E8DF;
+    font-size:18px;
+}
+		
+.vehicule_left{
+    height:245px;
+    width:400px;
+    margin:20px 0px 20px 20px;
+}
+
+.vehicule_middle{
+    width:300px;
+    margin-top:50px;
+}
+
+#categorie{
+    font-size:15px;
+    color:grey;
+    padding-left:10px;
+}
+
+#prix_par{
+    margin-top:49px;
+    background-color:#E8E8DF;
+    width:300px;
+    padding-left:10px;
+    padding-top: 2px;
+    height: 53px;
+    font-size:16px;
+}
+
+#prix{
+    margin-left:60px;
+    font-size:30px;
+}
+
+.vehicule_right{
+    width:300px;
+    margin-top:50px;
+    line-height: 180%;
+}
+
+.vehicule_right ul{
+    list-style:none;
+}
+
+.icone{
+    height:15px;
+    width:15px;
+    margin-right:10px;
+}
+
+.vehicule_right a{
+    display:block;
+    background-color:#FFE22A;
+    width:240px;
+    height:45px;
+    text-decoration:none;
+    text-align:center;
+    padding-top:10px;
+    color:black;
+    font-size:25px;
+    margin:auto;
+}
+
+.vehicule_right a:hover{
+    background-color:#FFE750;
+}
+
+.fiche{
+    display:flex;
+}
+
+.fiche_photo{
+    height:245px;
+    width:400px;
+}
+
+.fiche_details{
+    margin-left:20px;
+}
+
+#veh_nom{
+    margin-top:80px;
+    font-size:35px;
+    margin-bottom:0;
+}
+
+#veh_exemples{
+    font-size:12px;
+    color:#ED1C24;
+    margin-top:0;
+}
+
+#prix_veh{
+    margin-top:20px;
+}
+
+#tarif{
+    font-size:35px;
+    margin-left:20px;
+}
+
+.myform_fiche{
+    background-color:rgba(0,0,0,0.7) ;
+    width:90%;
+    text-align: justify;
+    margin:auto;
+    padding: 30px;
+    line-height: 10px;
+    color:white;
+    display:flex;
+    flex-direction: row;
+    font-family: 'Roboto', sans-serif;
+}
+
+#form_part{
+    width:50px;
+}
+
+.formsecondinput{
+    width:100px;
+}

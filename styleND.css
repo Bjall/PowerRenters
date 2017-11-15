@@ -1,0 +1,228 @@
+body {
+	background-image:url(mesimages/travel3.jpg);
+	background-repeat : no-repeat;			
+	background-size: cover;
+}
+
+/*première bande noire en haut*/
+#bandeau {
+	background-color: black;
+	height:100px;
+	font-family: 'Anton', sans-serif;
+	margin-bottom:50px;
+}
+
+.listeb {
+    display: flex;
+    flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: -0.7px;
+}
+
+/*logo*/
+#bandeau img{
+    height:80px;
+    margin-top: 10px;
+}
+#slogan {
+	color:white;
+	text-align: center;
+	margin:auto;
+	font-size: 40px;
+	margin-right:3rem;
+}
+
+/*menu*/
+#menuhaut {
+    height:51px;
+    background-color: white;
+    margin-top: -15px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+	font-family: 'Anton', sans-serif;
+
+}
+
+/*éléments de la liste*/
+#menuhaut li{
+	display:inline;
+	margin-left:30px;
+}
+
+/*les éléments de la liste liens*/
+#menuhaut li a {
+    text-decoration: none;
+    font-family: 'Anton', sans-serif;
+    color:black;
+    padding:9px 16px;
+}
+
+/*quand on passe la souris dessus #03542D*/
+#menuhaut a:hover{
+	background-color:#FFE22A;
+}
+
+.container {
+	display:block;
+	background-color: white;
+	height:100%;
+	text-align: center;
+	width:60%;
+	margin:auto;
+	margin-bottom: 20px;
+	padding:20px;
+	font-family: 'Fira Sans', sans-serif;
+}
+
+.footer {
+	background-color: #FFE22A;
+	height:50px;
+	text-align:center;
+	font-family: 'Anton', sans-serif;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	font-size:10px;
+}
+
+.secondimage{
+	border-radius:50%;
+}
+
+.firstimage {
+	width:60%;	
+}
+
+.tablo {
+	margin:auto;
+	margin-top: 50px;
+}
+
+.myforminscription {
+	font-family: 'Fira Sans', sans-serif;
+	margin-top: 200px;
+    background-color:rgba(0,0,0,0.7) ;
+    width:30%;
+    text-align: justify;
+    margin:auto;
+    padding: 30px;
+    line-height: 10px;
+    color:white;
+    border-radius: 10px;
+    border:solid;
+    border-color:white;
+    border-width: 2px:;
+}
+
+.myformpaiement {
+	font-family: 'Fira Sans', sans-serif;
+	margin-top: 200px;
+    background-color:rgba(0,0,0,0.7) ;
+    width:30%;
+    text-align: justify;
+    margin:auto;
+    padding: 30px;
+    line-height: 10px;
+    color:white;
+    border-radius: 10px;
+    border:solid;
+    border-color:white;
+    border-width: 2px:;
+}
+
+
+.formlabel {
+	display:block;
+	width:300px;
+	font-weight: bold;
+	margin-bottom:10px;
+}
+
+.forminput {
+	line-height: 10px;
+	margin-bottom: 30px;
+	width:100%;
+}
+
+.checkbox1{
+	line-height: 120%;
+}
+
+.checkbox2{
+	margin-bottom:20px;
+}
+	
+.divradio{
+margin-bottom:20px;
+font-family: 'Fira Sans', sans-serif;
+font-weight: bold;
+margin-left:-6px;
+}
+
+.validation {
+    display: flex;
+	flex-direction:row;
+	justify-content:center;
+	margin-top:20px;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: bold;
+}
+
+.validationPaiement {
+    display:flex;
+	flex-direction:row;
+	justify-content:center;
+	margin-top:-10px;
+}
+
+#nouvclient {
+    display: flex;
+	flex-direction:row;
+	justify-content:center;
+	color : white;
+	margin-top : 20px;
+}
+
+.logocb{
+	width: 50px;
+	height: 50px;
+	margin-bottom:150 px;
+}
+
+.divent{
+	text-align:center;
+	
+}
+
+.divtest{
+	margin-top:30px;
+}
+
+#crypt{
+	width:17%;
+}
+.validation {
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	margin-top:20px;
+}
+
+#ok:hover{
+background-color:#FFE22A;
+color:black;
+cursor:pointer;
+} 
+#ok {
+padding:10px;
+font-family: 'Roboto', sans-serif;
+width:30%;
+background-color:transparent;
+border-width:1.5px;
+border-color: white;
+color:white;
+font-size: 18px;
+border-radius: 5%;
+}
