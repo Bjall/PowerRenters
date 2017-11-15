@@ -1,37 +1,33 @@
 <?php
-require_once '../models/dao/connexionBdd.class.php';
+require_once '../controllers/dbconn.php';
 require_once '../models/Client.php'; 
 require_once '../models/Adresse.php'; 
+
+connexion();
+
+
 class client_DAO {
-
-public $con;	
-	
-function acces_DAO() {
-	$this->con=ConnexionBDD::getConnexion();
-}	
-
+		
 function  Liste_Client() { 
-		//	try{
-			$this->con=ConnexionBDD::getConnexion();
-			$req1 = $this->con->prepare("call SP_Liste_Client()"); //call SP_Liste_Client(@erreurCode,@sqlState,@erreurMessage)il faut mettre dans la proc stocké			
-			$req1->execute();
-			$data=$req1->fetchAll(PDO::FETCH_ASSOC);
-			$req1->closeCursor();
-			return $data;
-			
-		/*	$resultat=$this->con->query("select @errCode, @errState, @msgErreur")->fetch();		
-					if ($resultat[0]!=0)
-					Switch($resultat[0]){				
-					case 1366 : throw new Exception('Merci de rentrer un nombre'.$resultat[1].' '.$resultat[2]);
-					break;
-					default : throw new Exception('Merci de contacter l\'admin '.$resultat[1].' '.$resultat[2]);		
-					break;
-					}
+	
+			global $dbConn;	
+			$SQLQuery ='call SP_Liste_Client()';
+			$SQLResult = $dbConn->query($SQLQuery);
+			if ($SQLResult->rowCount() != 0){
+				$SQLRow = $SQLResult->fetchAll(PDO::FETCH_ASSOC);
+	
+				$SQLResult->closeCursor();
+				return  $SQLRow;
+			}else{
+				return null;
 			}
-				catch (PDOException $e) {
-				echo '<br>Erreur de connexion!!! :   ' . $e->getMessage();
-				}*/
+			
 		}
+
+	
+
+
+
 /*		
 function Ajout_client($pers){ 
 			try{			
