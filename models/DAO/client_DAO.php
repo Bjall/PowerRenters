@@ -2,7 +2,6 @@
 require_once '../controllers/dbconn.php';
 require_once '../models/Client.php'; 
 require_once '../models/Adresse.php'; 
-
 connexion();
 
 
@@ -24,11 +23,7 @@ function  Liste_Client() {
 			
 		}
 
-	
-
-
-
-/*		
+/*
 function Ajout_client($pers){ 
 			try{			
 			$req1=$this->con->prepare("call SP_Ajout_client (:v_nom,:v_prenom,:v_civ_id,:v_date_naissance,:v_mail,:v_permis_numero,:v_adresse_l1,:v_adresse_l2,:v_adresse_l3,:v_cp_id,:v_mdp,:v_stat_id,:v_type_adr_id,:v_date_permis,:v_typepermis_id)"); //avec exception(:v_nom,@errCode, @errState, @msgErreur)			

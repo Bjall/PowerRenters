@@ -20,10 +20,10 @@ function affAccessoire(){
 				$accessoire[] = new Accessoire($SQLRow->acc_id, $SQLRow->acc_libelle, $SQLRow->acc_prix_u_ht);		
 			
 			}
-			//var_dump($SQLResult);
+			// var_dump($SQLResult);
 
-			//var_dump($SQLRow);
-			//var_dump($accessoire);
+			// var_dump($SQLRow);
+			// var_dump($accessoire);
 			
 			$SQLResult->closeCursor();
 			return  $accessoire;

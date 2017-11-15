@@ -11,6 +11,7 @@ class ConnexionBDD {
 	private static $passwd = 'root';
 	private static $port = '3307';
 
+
 	private function ConnexionBDD() {
 		try {
 			self::$con = new PDO(self::$url, self::$login,self::$passwd);

@@ -63,6 +63,7 @@
 
 	<div>
 		<p class= "contenu">Liste des clients</p>
+<<<<<<< HEAD
 		
 		<table>
 			<tr>
@@ -96,6 +97,57 @@
 		
 			?>
 		</table>
+=======
+
+		<?php
+require_once '../Controllers/controleur_Admin.php';
+$listeClient = isset ($listeClient) ? $listeClient : NULL;
+	if ($listeClient!=null) {
+				echo'<h2>Liste de client</h2>
+				<table>
+					<tr><td>Nom</td>
+					<td>Prénom</td>
+					<td>Date de naissance</td>
+					<td>Numéro de permis</td>
+					<td>Nom</td>
+					<td>Téléphone</td>
+					<td>Prénom</td>
+					<td>Statut</td>
+					<td>Adresse</td>
+					<td>Adresse complément</td>
+					<td>Adresse complément</td>
+					<td>Code postal</td>
+					<td>Ville</td>
+					</tr>';
+					$script = '';
+					
+							
+							
+							for ($i=0;$i<count($listeClient);$i++){
+								$script .= '<tr>';
+								$script .= '<td>'.$listeClient[$i]->getCli_nom().'</td>';
+								$script .= '<td>'.$listeClient[$i]->getCli_prenom().'</td>';
+								$script .= '</tr>';}
+							
+						
+					print($script);
+					/*foreach($listeClient as $client){
+						echo'<tr>';
+						foreach ($client as $information){						
+						
+					echo'					
+						<td>'.$information.'</td>';	
+						}echo'</tr>';
+					}*/
+					echo '</table>';
+					
+	}
+	$toto = new client_DAO;
+	
+	$var= $toto->cherche_Client($_POST['numeroclient']);
+	var_dump($var);
+?>
+>>>>>>> 79e45ae8aa4c6f0a287801e1f32e9fb82e55e508
 	</div>
 
 	

@@ -19,6 +19,7 @@ require_once '../views/Admin_ListeClient.php';
 require_once '../models/DAO/accessoire_DAO.php';
 $listeAccessoire = new accessoire_DAO();
 $listeAcc = $listeAccessoire->affAccessoire();
+//var_dump($listeAcc);
 require_once '../views/affAccessoire.php';
 
 /*	break;
@@ -32,4 +33,3 @@ require_once '../views/affAccessoire.php';
 		default : ;
 		break;*/
 ?>
-
