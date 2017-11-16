@@ -9,7 +9,11 @@ class ConnexionBDD {
 	private static $url = 'mysql:host=localhost;dbname=powerrenters;charset=utf8';
 	private static $login = 'root';
 	private static $passwd = 'root';
+<<<<<<< HEAD
 		private static $port = '3306';
+=======
+	private static $port = '3307';
+>>>>>>> e1ab772b7ccdf889ff1724d5fa8c50a5f122af34
 
 
 	private function ConnexionBDD() {
