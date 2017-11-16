@@ -26,13 +26,13 @@
 
 		$whois = $query->fetch();
 
+		// Si c'est un admin
 		if ($whois['cli_stat_id'] == '3') {
 			// Redirection vers la page d'accueil back
-			print('Vous allez être connecté en tant qu\'admin');
-
+			header('Location: http://localhost/PowerRenters/views/administrateur.php');
 		} else {
 			// Redirection vers la page d'accueil front
-			header('Location: http://localhost/PowerRenters/');
+			header('Location: http://localhost/PowerRenters/controllers/Accueil.Controller.php');
 		}
 
 	} else {
