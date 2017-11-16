@@ -1,0 +1,124 @@
+/* Feuille de style back end
+*
+* Dernière modification le 16/11/2017 à 15h00
+*
+* Par Benoit */
+
+html {
+	border:0;
+	background-color: white;
+}
+
+.bandeauadmin {
+	vertical-align: middle;
+	background-color: red;
+	display: block;
+
+}
+
+.bandeauadmin a {
+	color: white;
+	text-decoration: none;
+	font-family: arial;
+	line-height: 50px;
+}
+
+.bandeauadmin ul {
+	display: block;
+	text-align: center;
+	display: flex;
+	justify-content: space-around;
+	width: 1000px;
+	margin: auto;
+	padding: 0;
+}
+
+.bandeauadmin ul li {
+	display: inline-block;
+}
+
+.bandeauadmin ul li:hover {
+	background: #C43B3F;
+}
+
+.bandeauadmin ul li:hover ul {
+	display: block;
+}
+
+.bandeauadmin ul li ul {
+	position: absolute;
+	width: 300px;
+	display: none;
+}
+
+.bandeauadmin ul li ul li { 
+	background: rgba(255, 0, 0, 0.95); 
+	display: block; 
+}
+
+.bandeauadmin ul li ul li a {
+	display:block !important;
+} 
+
+.bandeauadmin ul li ul li:hover {
+	background: #C43B3F;
+}
+
+.formulaire{
+	margin: auto;
+	text-align: left;
+	width: 550px;	
+}
+
+.formulaire input{
+	text-align: left;
+}
+
+.formulaire label{
+	display: block;
+	float: left;
+	width: 300px;
+}
+
+.contenuform {
+	margin-top: 40px;
+	font-family: arial;
+}
+
+.contenu {
+	margin-top: 50px;
+	font-size: x-large;
+	font-style: bold;
+	font-family: arial;
+}
+
+.imagepersonne {
+    width: 65px;
+    height: 65px;
+    z-index: 1;
+    position: absolute;
+    margin-left: 240px;
+    margin-top: 40px;
+}
+
+.imagevoiture{
+	width: 65px;
+    height: 65px;
+    z-index: 1;
+    position: absolute;
+    margin-left: 240px;
+    margin-top: 140px;
+}
+
+footer {
+	width: 100%;
+    bottom: 0;
+    text-align: center;
+    position: fixed;
+}
+
+.logopower {
+	width: 150px;
+    z-index: 1;
+    position: absolute;
+}
