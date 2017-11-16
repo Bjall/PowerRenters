@@ -62,12 +62,11 @@
 	</nav>
 
 	<div>
-		<p class= "contenu">Liste des clients</p>
+<?php
 
-		<?php
-$listeClient = isset ($listeClient) ? $listeClient : NULL;
-	if ($listeClient!=null) {
-				echo'<h2>Liste de client</h2>
+$faireplaisiranathalie = isset ($faireplaisiranathalie) ? $faireplaisiranathalie : NULL;
+	if ($faireplaisiranathalie!=null) {
+				echo'
 				<table class="tablocli">
 					<tr><td>Nom</td>
 					<td>Prénom</td>
@@ -87,31 +86,22 @@ $listeClient = isset ($listeClient) ? $listeClient : NULL;
 					
 							
 							
-							for ($i=0;$i<count($listeClient);$i++){
-								$script .= '<tr>';
-								$script .= '<td>'.$listeClient[$i]->getCli_nom().'</td>';
-								$script .= '<td>'.$listeClient[$i]->getCli_prenom().'</td>';
-								$script .= '<td>'.$listeClient[$i]->getCli_date_naissance().'</td>';
-								$script .= '<td>'.$listeClient[$i]->getCli_permis_numero().'</td>';
-								$script .= '<td>'.$listeClient[$i]->getCli_mail().'</td>';
-								$script .= '<td>'.$listeClient[$i]->getCli_civ_denomination().'</td>';
-								$script .= '<td>'.$listeClient[$i]->getCli_stat_libelle().'</td>';
-								$script .= '<td>'.$listeClient[$i]->getCli_permis_numero().'</td>';
-								$script .= '<td>'.$listeClient[$i]->getAdresse_l1().'</td>';
-							}
 							
+					$script .= '<tr>';
+					$script .= '<td>'.$faireplaisiranathalie->getCli_nom().'</td>';
+					$script .= '<td>'.$faireplaisiranathalie->getCli_prenom().'</td>';
+					$script .= '<td>'.$faireplaisiranathalie->getCli_date_naissance().'</td>';
+					$script .= '<td>'.$faireplaisiranathalie->getCli_permis_numero().'</td>';
+					$script .= '<td>'.$faireplaisiranathalie->getCli_mail().'</td>';
+					$script .= '<td>'.$faireplaisiranathalie->getCli_civ_denomination().'</td>';
+					$script .= '<td>'.$faireplaisiranathalie->getCli_stat_libelle().'</td>';
+					$script .= '<td>'.$faireplaisiranathalie->getCli_permis_numero().'</td>';
+					$script .= '<td>'.$faireplaisiranathalie->getAdresse_l1().'</td>';
+							
+				
 						
 					print($script);
-					/*foreach($listeClient as $client){
-						echo'<tr>';
-						foreach ($client as $information){						
-						
-					echo'					
-						<td>'.$information.'</td>';	
-						}echo'</tr>';
-					}*/
 					echo '</table>';
-					
 	}
 
 ?>

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 
 <html>
@@ -16,7 +17,14 @@
 			<li>
 				<a href="#">Clientèle</a>
 				<ul>
-					<li><a href="admin_ListeClient.php">Afficher la liste des clients</a></li>
+
+					<form action="../controllers/controleur_Admin.php" method="POST">
+						<input type="hidden" name="option" value="ListeClient">
+						<li>
+						<a href="">Afficher la liste des clients</a>
+						</li>
+					</form>
+
 					<li><a href="adminAddCli.php">Ajouter un client</a></li>
 				</ul>
 			</li>
@@ -67,11 +75,15 @@
 	<img src="../images/personnes.png" class="imagepersonne">
 	<img src="../images/voiture.png" class="imagevoiture">
 	<div class="formulaire">
+
 		<label for="numeroclient" class="contenuform">Rechercher un client par numéro:</label>
-		<form action="admin_ListeClient.php" method="POST">
+
+		<form action="../controllers/controleur_Admin.php" method="POST">
+			<input type="hidden" name="option" value="chercherClient">
 			<input  type="text" name="numeroclient" class="contenuform"/> 
 			<input type="submit" name="submit" class="contenuform"/>
 		</form>
+
 		<br/>
 		<label for="nomclient" class="contenuform">Rechercher un client par nom:</label><input type="text" name="nomclient" class="contenuform"/> <input type="submit" name="submit" class="contenuform"/><br/>
 		<label for="numerovehicule" class="contenuform">Rechercher un véhicule par numéro:</label><input type="text" name="numerovehicule" class="contenuform"/> <input type="submit" name="submit" class="contenuform"/><br/>

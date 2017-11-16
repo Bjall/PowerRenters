@@ -19,12 +19,12 @@ html{
 
 .bandeauadmin ul {
 	display: block;
-  text-align: center;
-  display: flex;
-  justify-content: space-around;
-  width: 1000px;
-  margin: auto;
-  padding: 0;
+	text-align: center;
+	display: flex;
+	justify-content: space-around;
+	width: 1000px;
+	margin: auto;
+	padding: 0;
 }
 
 .bandeauadmin ul li {
@@ -115,4 +115,8 @@ footer {
 	width: 150px;
     z-index: 1;
     position: absolute;
+}
+
+.tablocli {
+
 }

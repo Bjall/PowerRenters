@@ -3,7 +3,7 @@
 	// Tableau contenant les identifiants de connexion à la BDD
 	$config = array(
 		'loginBDD' => 'root',
-		'mdpBDD' => '',
+		'mdpBDD' => 'root',
 		'base' => 'powerrenters',
 		);
 

@@ -11,7 +11,7 @@
 <body>
 
 	<nav class="bandeauadmin"> 
-		<img src="logopower.png" class="logopower">
+		
 		<ul>
 			<li><a href="administrateur.php">Accueil administrateur</a></li>
 			<li>
@@ -62,59 +62,35 @@
 	</nav>
 
 	<div>
-		<p class= "contenu">Liste des clients</p>
+		<p class= "contenu">Liste des Acccessoires</p>
 
-		<?php
-$listeClient = isset ($listeClient) ? $listeClient : NULL;
-	if ($listeClient!=null) {
-				echo'<h2>Liste de client</h2>
-				<table class="tablocli">
-					<tr><td>Nom</td>
-					<td>Prénom</td>
-					<td>Date de naissance</td>
-					<td>Numéro de permis</td>
-					<td>Nom</td>
-					<td>Téléphone</td>
-					<td>Prénom</td>
-					<td>Statut</td>
-					<td>Adresse</td>
-					<td>Adresse complément</td>
-					<td>Adresse complément</td>
-					<td>Code postal</td>
-					<td>Ville</td>
-					</tr>';
-					$script = '';
+		
+		<table>
+			
+			<tr>
+				<th>Nom</th>
+				<th>Prix</th>
+			</tr>
+			<?php
+				$script = '';
+				foreach ($listeAcc as $acc) {
 					
-							
-							
-							for ($i=0;$i<count($listeClient);$i++){
-								$script .= '<tr>';
-								$script .= '<td>'.$listeClient[$i]->getCli_nom().'</td>';
-								$script .= '<td>'.$listeClient[$i]->getCli_prenom().'</td>';
-								$script .= '<td>'.$listeClient[$i]->getCli_date_naissance().'</td>';
-								$script .= '<td>'.$listeClient[$i]->getCli_permis_numero().'</td>';
-								$script .= '<td>'.$listeClient[$i]->getCli_mail().'</td>';
-								$script .= '<td>'.$listeClient[$i]->getCli_civ_denomination().'</td>';
-								$script .= '<td>'.$listeClient[$i]->getCli_stat_libelle().'</td>';
-								$script .= '<td>'.$listeClient[$i]->getCli_permis_numero().'</td>';
-								$script .= '<td>'.$listeClient[$i]->getAdresse_l1().'</td>';
-							}
-							
-						
-					print($script);
-					/*foreach($listeClient as $client){
-						echo'<tr>';
-						foreach ($client as $information){						
-						
-					echo'					
-						<td>'.$information.'</td>';	
-						}echo'</tr>';
-					}*/
-					echo '</table>';
-					
-	}
+					$script .= '<tr>';
+					$script .= '<td>'.$acc->getAccessoire_libelle(). '</td>';
+					$script .= '<td>'.$acc->getAccessoire_prix_u_ht(). '</td>';
+					$script .= '</tr>';
+				}
+				print($script);
+				//var_dump($listeAcc);
+				// var_dump($acc);
+			?>
 
-?>
+		</table>
+
+
+		
+
+
 	</div>
 
 	
@@ -128,4 +104,3 @@ $listeClient = isset ($listeClient) ? $listeClient : NULL;
 
 
 </html>
-
