@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 
 <html>
@@ -10,21 +9,15 @@
 </head>
 
 <body>
+
 	<nav class="bandeauadmin"> 
-		<img src="../images/logopower.png" class="logopower">
+		
 		<ul>
 			<li><a href="administrateur.php">Accueil administrateur</a></li>
 			<li>
 				<a href="#">Clientèle</a>
 				<ul>
-
-					<form action="../controllers/controleur_Admin.php" method="POST">
-						<input type="hidden" name="option" value="ListeClient">
-						<li>
-						<a href="">Afficher la liste des clients</a>
-						</li>
-					</form>
-
+					<li><a href="admin_ListeClient.php">Afficher la liste des clients</a></li>
 					<li><a href="adminAddCli.php">Ajouter un client</a></li>
 				</ul>
 			</li>
@@ -69,33 +62,45 @@
 	</nav>
 
 	<div>
-		<p class= "contenu">Bienvenue, administrateur.</p>
-		<p class= "contenu">Accès rapide</p>
+		<p class= "contenu">Liste des Acccessoires</p>
+
+		
+		<table>
+			
+			<tr>
+				<th>Nom</th>
+				<th>Prix</th>
+			</tr>
+			<?php
+				$script = '';
+				foreach ($listeAcc as $acc) {
+					
+					$script .= '<tr>';
+					$script .= '<td>'.$acc->getAccessoire_libelle(). '</td>';
+					$script .= '<td>'.$acc->getAccessoire_prix_u_ht(). '</td>';
+					$script .= '</tr>';
+				}
+				print($script);
+				//var_dump($listeAcc);
+				// var_dump($acc);
+			?>
+
+		</table>
+
+
+		
+
+
 	</div>
-	<img src="../images/personnes.png" class="imagepersonne">
-	<img src="../images/voiture.png" class="imagevoiture">
-	<div class="formulaire">
 
-		<label for="numeroclient" class="contenuform">Rechercher un client par numéro:</label>
-
-		<form action="../controllers/controleur_Admin.php" method="POST">
-			<input type="hidden" name="option" value="chercherClient">
-			<input  type="text" name="numeroclient" class="contenuform"/> 
-			<input type="submit" name="submit" class="contenuform"/>
-		</form>
-
-		<br/>
-		<label for="nomclient" class="contenuform">Rechercher un client par nom:</label><input type="text" name="nomclient" class="contenuform"/> <input type="submit" name="submit" class="contenuform"/><br/>
-		<label for="numerovehicule" class="contenuform">Rechercher un véhicule par numéro:</label><input type="text" name="numerovehicule" class="contenuform"/> <input type="submit" name="submit" class="contenuform"/><br/>
-	</div>
 	
 </body>
 
 <footer>
 	<a href="mentionlegales.php">Mentions legales</a>
 	<a href="apropos.php"> A propos</a>
-	<a href="faq.php">FAQ</a>
+	<a href="FAQ">FAQ</a>
 </footer>
 
-
 </html>
+
