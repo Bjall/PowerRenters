@@ -160,6 +160,23 @@ nav li:hover .submenu {
     margin:auto;
 }
 
+.myform {
+    background-color:rgba(0,0,0,0.7) ;
+    width:20%;
+    text-align: justify;
+    margin:auto;
+    padding: 30px;
+    line-height: 10px;
+    color:white;
+    border-radius: 2%;
+    border:solid;
+    border-color:white;
+    border-width: 1px;
+    display:flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+
 .formtitre {
     display:block;
     width:250px;
