@@ -1,5 +1,4 @@
 <?php
-
 class Vehicule{
 	private $veh_id;
 	private $veh_date_achat;
@@ -19,7 +18,7 @@ class Vehicule{
 	private $veh_porte_id;
 	private $typepermis_id;
 	
-	public function getVeh_id(){
+public function getVeh_id(){
 		return $this->veh_id;
 	}
 	public function setVeh_id($veh_id){
@@ -121,5 +120,7 @@ class Vehicule{
 	public function setTypepermis_id($typepermis_id){
 		$this->typepermis_id = $typepermis_id;
 	}
+	
+	
 }
 ?>

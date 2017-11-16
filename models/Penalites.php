@@ -1,5 +1,4 @@
 <?php
-
 class Penalites{
 	private $penaliteId;
 	private $penaliteLibelle;
