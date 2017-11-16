@@ -16,7 +16,7 @@
 
 		<!-- Formulaire de connexion -->
 		<fieldset>
-			<form class="myforminscription" method="post" action="../controllers/ConnexionController.php">
+			<form id="formulaire-connexion" method="post" action="../controllers/ConnexionController.php">
 				<legend>Connectez-vous</legend>
 				<!-- E-mail -->
 				<input type="email" name="email" placeholder="ranger@power.com" required>
